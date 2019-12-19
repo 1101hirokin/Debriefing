@@ -67,7 +67,7 @@ export default {
       { hid: 'description', name: 'description', content: '' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/img/favicons/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/Debriefing/image/favicons/fav.ico' }
     ],
   },
   data() {
