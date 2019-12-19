@@ -8,6 +8,9 @@
 * {
   box-sizing: border-box;
   overscroll-behavior: none;
+
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
 }
 html {
     font-size: 16px;
@@ -29,3 +32,8 @@ html, body {
     align-content: center;
 }
 </style>
+
+<script>
+export default {
+}
+</script>

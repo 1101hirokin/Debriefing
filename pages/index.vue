@@ -55,6 +55,21 @@ import {init} from 'ityped'
 export default {
   components: {
   },
+  metaInfo: {
+    title: "DEBRIEFING",
+    titleTemplate: "%s | Hiroki's Footprint",
+    htmlAttrs: {
+      amp: true
+    },
+    charset: 'utf-8',
+    meta: [
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: '' },
+    ],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/img/favicons/favicon.ico' }
+    ],
+  },
   data() {
     return {
       topLogoStr: '',
