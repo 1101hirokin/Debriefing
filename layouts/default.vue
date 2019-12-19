@@ -7,6 +7,7 @@
 <style lang="scss">
 * {
   box-sizing: border-box;
+  overscroll-behavior: none;
 }
 html {
     font-size: 16px;

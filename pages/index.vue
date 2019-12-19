@@ -1,5 +1,8 @@
 <template>
   <div id="websiteContainer">
+    <div id="effectsContainer">
+      <div id="effect_shadowContainer" class="effect"></div>
+    </div>
     <div id="websiteContainer_inner">
         <div id="hirokiNakataniDeliverable">
             <!--
@@ -14,7 +17,7 @@
             -->
 
             <div id="deliverableLogoWrapper">
-              <img src="@/assets/img/topLogo.svg" id="deliverableLogo" />
+              <img src="@/assets/img/topLogo_light.svg" id="deliverableLogo" />
             </div>
         </div>
         <div id="topLogoContainer">
@@ -33,13 +36,13 @@
         <div id="linksContainer">
           <ul id="linksUnorderedList">
             <li class="linkList">
+              <nuxt-link to="/dazaifu" class="linkListAnchor"></nuxt-link>
               <div class="linkListIconWrapper">
                 
               </div>
               <div class="linkListTitleWrapper">
-                太宰府 <span class="alphabetWrapper">Dazaifu</span>
+                <span class="linkListTitle">太宰府 <span class="alphabetWrapper">Dazaifu</span></span>
               </div>
-              <a class="linkListAnchor"></a>
             </li>
           </ul>
         </div>
@@ -83,10 +86,33 @@ export default {
 <style lang="scss" scoped>
 #websiteContainer {
     display: grid;
+    width: 100%;
     min-height: 100vh;
     height: 100%;
     grid-template-rows: minmax(100%, auto);
     grid-template-columns: 1fr minmax(auto, $width_max_smartPhone) 1fr;
+
+    background-color: #2b2b2b;
+
+    position: relative;
+    #effectsContainer {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      .effect {
+        width: 100%;
+        height: 100%;
+      }
+      #effect_shadowContainer {
+        box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.6),
+		                inset 0 0 300px rgba(0, 0, 0, 0.4);
+      }
+    }
     #websiteContainer_inner {
         grid-row: 1/2;
         grid-column: 2/3;
@@ -101,16 +127,15 @@ export default {
     grid-template-rows: minmax($height, auto);
     grid-template-columns: auto 1fr;
     column-gap: 8px;
+    $color: #2b2b2b;
     */
     display: block;
     width: 100%;
 
     overflow: hidden;
 
-    margin-top: 54px;
+    margin-top: 24px;
     margin-bottom: 54px;
-
-    $color: #2b2b2b;
     #deliverableLogoWrapper {
         height: 30px;
         #deliverableLogo {
@@ -146,6 +171,8 @@ export default {
     */
 }
 #topLogoContainer {
+  $color: #64b9ff;
+
   margin-bottom: 54px;
     #topLogoHeadingWrapper {
         font-family: termina, sans-serif;
@@ -153,12 +180,14 @@ export default {
         font-size: 1.5rem;
 
         margin: 0;
+        color: $color;
     }
     #topLogoSubHeadingWrapper {
         font-weight: 100;
         margin: 0 0 30px 0;
         font-size: .75rem;
         line-height: 1.5;
+        color: $color;
     }
 }
 
@@ -172,39 +201,14 @@ export default {
     list-style: none;
 
     .linkList {
+      $color: #64b9ff;
+
       display: grid;
       $height: 60px;
       grid-template-rows: $height;
       grid-template-columns: $height 1fr;
 
       position: relative;
-      .linkListIconWrapper {
-        grid-row: 1/2;
-        grid-column: 1/2;
-      }
-      .linkListTitleWrapper {
-        grid-row: 1/2;
-        grid-column: 2/3;
-
-        transition: all .2s;
-
-        color: #2b2b2b;
-        line-height: $height;
-
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-
-        &:hover {
-          text-decoration: underline;
-        }
-
-        .alphabetWrapper {
-          font-family: termina, sans-serif;
-          padding:4px;
-          font-size: .65rem;
-        }
-      }
       
       .linkListAnchor {
         display: block;
@@ -217,6 +221,40 @@ export default {
         bottom: 0;
         right: 0;
         left: 0;
+        &:hover~.linkListTitleWrapper {
+          .linkListTitle {
+            border-bottom: 1px solid $color;
+          }
+        }
+      }
+
+      .linkListIconWrapper {
+        grid-row: 1/2;
+        grid-column: 1/2;
+      }
+      .linkListTitleWrapper {
+
+        grid-row: 1/2;
+        grid-column: 2/3;
+
+        transition: all .2s;
+
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+        .linkListTitle {
+          color: $color;
+          line-height: $height;
+          padding-bottom: 3px;
+          border-bottom: 1px solid transparent;
+          transition: all .2s;
+          .alphabetWrapper {
+            font-family: termina, sans-serif;
+            padding:4px;
+            font-size: .65rem;
+          }
+        }
       }
     }
   }
