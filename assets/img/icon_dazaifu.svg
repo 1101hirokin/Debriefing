@@ -1,0 +1,17 @@
+<svg id="icon_dazaifu" data-name="icon_dazaifu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+	<defs>
+		<style>
+			.icon_dazaifu-1{fill:#286dd1;}
+			.icon_dazaifu-2{fill:#2b7ad8;}
+			.icon_dazaifu-3{fill:#2d90e2;}
+			.icon_dazaifu-4{fill:#379ff4;}
+			.icon_dazaifu-5{fill:#4dafff;}
+		</style>
+	</defs>
+	<circle class="icon_dazaifu-1" cx="300" cy="153.81" r="147.72"/>
+	<circle class="icon_dazaifu-2" cx="452.28" cy="266.5" r="147.72"/>
+	<circle class="icon_dazaifu-3" cx="394.42" cy="446.19" r="147.72"/>
+	<circle class="icon_dazaifu-4" cx="204.06" cy="446.19" r="147.72"/>
+	<circle class="icon_dazaifu-5" cx="147.72" cy="266.5" r="147.72"/>
+	<path class="icon_dazaifu-1" d="M300,6.09a147.72,147.72,0,1,0,0,295.43Z"/>
+</svg>

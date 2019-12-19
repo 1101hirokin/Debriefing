@@ -37,8 +37,24 @@
           <ul id="linksUnorderedList">
             <li class="linkList">
               <nuxt-link to="/dazaifu" class="linkListAnchor"></nuxt-link>
-              <div class="linkListIconWrapper">
-                
+              <div class="linkListIconWrapper centering">
+                <svg class="linkListIcon" data-name="layor 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+                  <defs>
+                    <style>
+                      .icon_dazaifu-1{fill:#286dd1;}
+                      .icon_dazaifu-2{fill:#2b7ad8;}
+                      .icon_dazaifu-3{fill:#2d90e2;}
+                      .icon_dazaifu-4{fill:#379ff4;}
+                      .icon_dazaifu-5{fill:#4dafff;}
+                    </style>
+                  </defs>
+                  <circle class="icon_dazaifu-1" cx="300" cy="153.81" r="147.72"/>
+                  <circle class="icon_dazaifu-2" cx="452.28" cy="266.5" r="147.72"/>
+                  <circle class="icon_dazaifu-3" cx="394.42" cy="446.19" r="147.72"/>
+                  <circle class="icon_dazaifu-4" cx="204.06" cy="446.19" r="147.72"/>
+                  <circle class="icon_dazaifu-5" cx="147.72" cy="266.5" r="147.72"/>
+                  <path class="icon_dazaifu-1" d="M300,6.09a147.72,147.72,0,1,0,0,295.43Z"/>
+                </svg>
               </div>
               <div class="linkListTitleWrapper">
                 <span class="linkListTitle">太宰府 <span class="alphabetWrapper">Dazaifu</span></span>
@@ -228,6 +244,23 @@ export default {
 
       animation: floating 4s linear infinite;
       transform-origin: 50% 50%;
+
+      &::after {
+        display: block;
+        content: '';
+
+        width: 100%;
+        height: 75%;
+
+        border-right: 1px solid $color;
+        border-left: 1px solid $color;
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+
+      }
       
       .linkListAnchor {
         display: block;
@@ -250,6 +283,19 @@ export default {
       .linkListIconWrapper {
         grid-row: 1/2;
         grid-column: 1/2;
+
+        width: 100%;
+        height: 100%;
+
+        .linkListIcon {
+          $len: 60%;
+
+          display: block;
+          width: $len;
+          height: $len;
+
+          filter: drop-shadow(1px 1px 3px #000000b9);
+        }
       }
       .linkListTitleWrapper {
 
