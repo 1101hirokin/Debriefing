@@ -225,6 +225,9 @@ export default {
       grid-template-columns: $height 1fr;
 
       position: relative;
+
+      animation: floating 4s linear infinite;
+      transform-origin: 50% 50%;
       
       .linkListAnchor {
         display: block;
@@ -260,15 +263,11 @@ export default {
         white-space: nowrap;
 
         .linkListTitle {
-          display: inline-block;
           color: $color;
           line-height: $height;
           padding-bottom: 3px;
           border-bottom: 1px solid transparent;
           transition: all .2s;
-
-          animation: floating 4s linear infinite;
-          transform-origin: 50% 50%;
 
           filter: drop-shadow(1px 1px 3px #000000b9);
 
