@@ -127,6 +127,22 @@ export default {
     background-color: #2b2b2b;
 
     position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top:0px;
+      left:0px;
+      right:0px;
+      bottom:0px;
+      z-index:1000;
+      background: repeating-linear-gradient(0deg, #000000 0px, #000000 1px, transparent 2px, transparent 5px);
+      background-size:100% 5px;
+      animation: lines 2s ease-out infinite;
+      opacity:0.3;
+      mix-blend-mode: color-burn;
+      pointer-events: none;
+    }
     #effectsContainer {
       position: fixed;
       width: 100vw;
@@ -346,5 +362,14 @@ export default {
   0% { transform: translateY(0) }
   50% { transform: translateY(-3px) }
   100% { transform: translateY(0) }
+}
+
+@keyframes lines {
+   0% {
+      background-position:0px 0px;
+   }
+   100% {
+      background-position:0px 25px;
+   }
 }
 </style>
