@@ -263,6 +263,8 @@ export default {
         white-space: nowrap;
 
         .linkListTitle {
+          user-select: none;
+          pointer-events: none;
           color: $color;
           line-height: $height;
           padding-bottom: 3px;
