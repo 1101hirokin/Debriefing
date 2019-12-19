@@ -245,7 +245,9 @@ export default {
       animation: floating 4s linear infinite;
       transform-origin: 50% 50%;
 
-      &::after {
+      &::before {
+        user-select: none;
+        pointer-events: none;
         display: block;
         content: '';
 
