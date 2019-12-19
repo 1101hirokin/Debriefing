@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{152:function(t,n,e){"use strict";e.r(n);var r=e(21),component=Object(r.a)({},(function(){var t=this.$createElement;return(this._self._c||t)("div",{staticClass:"pageContainer",attrs:{id:"dazaifuPageContainer"}})}),[],!1,null,null,null);n.default=component.exports}}]);

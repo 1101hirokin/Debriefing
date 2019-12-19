@@ -35,8 +35,8 @@
 
         <div id="linksContainer">
           <ul id="linksUnorderedList">
-            <li class="linkList">
-              <nuxt-link to="/dazaifu" class="linkListAnchor"></nuxt-link>
+            <li class="linkList" v-ripple="'rgba(100, 185, 255, .2)'" >
+              <div @click="lazyRouting('/dazaifu', 500)" class="linkListAnchor"></div>
               <div class="linkListIconWrapper centering">
                 <svg class="linkListIcon" data-name="layor 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
                   <defs>
@@ -110,7 +110,12 @@ export default {
         this.showSubHeading = true
       },duration+1)
       */
-    }
+    },
+    lazyRouting(path='/', delay=200) {
+      setTimeout(() => {
+        this.$router.push(path)
+      }, delay)
+    },
   }
 }
 </script>
@@ -249,6 +254,7 @@ export default {
     list-style: none;
 
     .linkList {
+      cursor: pointer;
       $color: #64b9ff;
 
       display: grid;
@@ -304,6 +310,8 @@ export default {
 
         width: 100%;
         height: 100%;
+
+        pointer-events: none;
 
         .linkListIcon {
           $len: 60%;

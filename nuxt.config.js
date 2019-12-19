@@ -25,7 +25,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/vue-meta',
+    {src: '~/plugins/vue-meta', ssr: true},
+    {src: '~/plugins/vue-ripple-directive', ssr: false},
   ],
   /*
   ** Nuxt.js dev-modules
