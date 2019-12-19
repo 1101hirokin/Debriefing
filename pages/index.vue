@@ -260,11 +260,18 @@ export default {
         white-space: nowrap;
 
         .linkListTitle {
+          display: inline-block;
           color: $color;
           line-height: $height;
           padding-bottom: 3px;
           border-bottom: 1px solid transparent;
           transition: all .2s;
+
+          animation: floating 4s linear infinite;
+          transform-origin: 50% 50%;
+
+          filter: drop-shadow(1px 1px 3px #000000b9);
+
           .alphabetWrapper {
             font-family: termina, sans-serif;
             padding:4px;
@@ -284,5 +291,11 @@ export default {
 }
 .fade-enter-to, .fade-leave {
     opacity: 1;
+}
+
+@keyframes floating {
+  0% { transform: translateY(0) }
+  50% { transform: translateY(-3px) }
+  100% { transform: translateY(0) }
 }
 </style>
