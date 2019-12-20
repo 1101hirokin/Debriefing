@@ -81,7 +81,6 @@ export default {
     title: "DEBRIEFING_",
     titleTemplate: "%s | Hiroki's Footprint",
     htmlAttrs: {
-      amp: false
     },
     charset: 'utf-8',
     meta: [
