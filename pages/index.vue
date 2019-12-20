@@ -90,8 +90,18 @@ export default {
       { name: 'theme-color', content: '#202020'}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/Debriefing/image/favicons/fav.ico' },
-      { rel: 'manifest', href: '/Debriefing/manifest.json' }
+      { rel: 'icon', type: 'image/x-icon', href: '/Debriefing/top/image/favicon.ico' },
+	  { rel: 'manifest', href: '/Debriefing/top/manifest.json' },
+
+	  { rel: 'apple-touch-icon', sizes: '57x57',	href: '/Debriefing/top/image/touch_icons/apple-touch-icon-57x57.png'},
+	  { rel: 'apple-touch-icon', sizes: '60x60',	href: '/Debriefing/top/image/touch_icons/apple-touch-icon-60x60.png'},
+	  { rel: 'apple-touch-icon', sizes: '72x72',	href: '/Debriefing/top/image/touch_icons/apple-touch-icon-72x72.png'},
+	  { rel: 'apple-touch-icon', sizes: '76x76',	href: '/Debriefing/top/image/touch_icons/apple-touch-icon-76x76.png'},
+	  { rel: 'apple-touch-icon', sizes: '114x114',	href: '/Debriefing/top/image/touch_icons/apple-touch-icon-114x114.png'},
+	  { rel: 'apple-touch-icon', sizes: '120x120',	href: '/Debriefing/top/image/touch_icons/apple-touch-icon-120x120.png'},
+	  { rel: 'apple-touch-icon', sizes: '144x144',	href: '/Debriefing/top/image/touch_icons/apple-touch-icon-144x144.png'},
+	  { rel: 'apple-touch-icon', sizes: '152x152',	href: '/Debriefing/top/image/touch_icons/apple-touch-icon-152x152.png'},
+	  { rel: 'apple-touch-icon', sizes: '180x180',	href: '/Debriefing/top/image/touch_icons/apple-touch-icon-180x180.png'},
     ],
   },
   data() {

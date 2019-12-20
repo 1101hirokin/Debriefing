@@ -18,7 +18,7 @@ export default {
             //{ name: 'theme-color', content: '#202020'}
         ],
         link: [
-            //{ rel: 'icon', type: 'image/x-icon', href: '/Debriefing/image/favicons/fav.ico' }
+            //{ rel: 'icon', type: 'image/x-icon', href: '/Debriefing/top/image/favicons/fav.ico' }
         ],
     },
 }

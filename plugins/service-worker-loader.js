@@ -1,5 +1,5 @@
 if ('serviceWorker' in navigator) {
 
-    navigator.serviceWorker.register('/Debriefing/script/service-worker.js')
+    navigator.serviceWorker.register('/Debriefing/top/script/service-worker.js')
   
   }
