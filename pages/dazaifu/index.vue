@@ -9,7 +9,7 @@ export default {
         title: "太宰府 -Dazaifu",
         titleTemplate: "%s | DEBRIEFING_",
         htmlAttrs: {
-        amp: true
+        amp: false
         },
         charset: 'utf-8',
         meta: [
