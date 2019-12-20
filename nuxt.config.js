@@ -20,6 +20,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '~/assets/css/common.css',
   ],
   /*
   ** Plugins to load before mounting the App
@@ -27,6 +28,7 @@ export default {
   plugins: [
     {src: '~/plugins/vue-meta', ssr: true},
     {src: '~/plugins/vue-ripple-directive', ssr: false},
+    {src: '~/plugins/service-worker-loader', ssr: false},
   ],
   /*
   ** Nuxt.js dev-modules
