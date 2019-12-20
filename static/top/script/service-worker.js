@@ -2,8 +2,8 @@ var APP_PREFIX = 'DEBRIEFING_'
 var VERSION = '1_0_0'              
 var CACHE_NAME = APP_PREFIX + VERSION
 var URLS = [                            
-  '/DEBRIEFING/',                     
-  '/DEBRIEFING/index.html'            
+  '/Debriefing/',                     
+  '/Debriefing/index.html'            
 ]
 
 self.addEventListener('fetch', function (e) {
